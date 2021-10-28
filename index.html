@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content hoverable">
+            <div class="input-field">
+                <i class="material-icons prefix tooltipped" data-position="top" data-tooltip="Copy to clipboard"
+                    style="cursor: pointer;" onclick="copyPass()">content_copy</i>
+                <input readonly placeholder=" " id="password" type="text" class="validate">
+                <label for="password" class="active">Password</label>
+            </div>
+            <div class="row">
+                <div class="col m6 l6 s6">
+                    <div class="input-field">
+
+                        <input id="length" type="number" class="validate" value="20" min="1">
+                        <label for="length">Length</label>
+                    </div>
+
+                </div>
+                <div class="col m6 l6 s6">
+                    <div class="row">
+                        <label class="col s12 l6 m8">
+                            <input type="checkbox" class="filled-in" id="lower" />
+                            <span>Contain lowercase</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col s12 l6 m8">
+                            <input type="checkbox" class="filled-in" id="upper" />
+                            <span>Contain UPPERCASE</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col s12 l6 m8">
+                            <input type="checkbox" class="filled-in" id="symbol" />
+                            <span>Contain Symbols</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col s12 l6 m8">
+                            <input type="checkbox" class="filled-in" id="number" />
+                            <span>Contain Numbers</span>
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <a class="waves-effect waves-light btn col l12 m12 s12" id="generate" onclick="getValAndGen()">Generate
+                    Password</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 100px 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+}
+.content{
+    
+    padding: 5px;
+    width: 45em;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+
+.btn{
+    margin:0 20px;
+}
